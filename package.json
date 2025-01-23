@@ -1,0 +1,26 @@
+{
+  "name": "simple-typescript",
+  "version": "1.0.0",
+  "description": "Simple TypeScript starter project.",
+  "author": "Thfona",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "tsc -p .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@eslint/json": "^0.9.1",
+    "@eslint/markdown": "^6.2.1",
+    "@types/node": "^22.10.8",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint": "^9.18.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
