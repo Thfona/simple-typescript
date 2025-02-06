@@ -39,6 +39,7 @@ export default [
             'comma-dangle': ['error', 'always-multiline'],
             quotes: ['error', 'single'],
             semi: ['error', 'always'],
+            indent: ['error', 4],
         },
     },
     {
