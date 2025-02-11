@@ -48,6 +48,7 @@ export default [
         languageOptions: {
             globals: {
                 ...globals.node,
+                ...globals.jest,
             },
             ecmaVersion: 2022,
             sourceType: 'module',
@@ -62,6 +63,7 @@ export default [
         languageOptions: {
             globals: {
                 ...globals.node,
+                ...globals.jest,
             },
             parser: tsParser,
             ecmaVersion: 2022,
