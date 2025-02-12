@@ -63,4 +63,3 @@ testem.log*
 *.pnp.*
 .yarn-integrity
 .env
-.vercel
