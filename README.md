@@ -24,7 +24,7 @@ $ npm run test:watch
 $ npm run test:cov
 
 # Clean
-$ npm run clean                   # Removes dist folder
-$ npm run clean:packages          # Removes node_modules folder
-$ npm run clean:all               # Runs all of the above
+$ npm run clean                     # Removes dist folder
+$ npm run clean:packages            # Removes node_modules folder
+$ npm run clean:all                 # Runs all of the above
 ```
