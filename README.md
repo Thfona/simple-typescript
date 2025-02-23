@@ -12,7 +12,7 @@ $ npm install
 $ npm start
 
 # Build
-npm run build
+$ npm run build
 
 # Lint
 $ npm run lint
