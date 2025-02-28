@@ -41,6 +41,7 @@ export default [
             semi: ['error', 'always'],
             indent: ['error', 4],
             'no-shadow': ['error', { hoist: 'all' }],
+            'jsx-quotes': ['error', 'prefer-single'],
         },
     },
     {
