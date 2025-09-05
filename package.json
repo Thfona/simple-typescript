@@ -1,44 +1,44 @@
 {
-    "name": "simple-typescript",
-    "version": "1.0.0",
-    "description": "Simple TypeScript starter project.",
-    "author": "Thfona",
-    "license": "MIT",
-    "private": true,
-    "scripts": {
-        "start": "nodemon src/index.ts",
-        "build": "tsc -p .",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix",
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "test:cov": "jest --coverage",
-        "clean": "rimraf dist",
-        "clean:packages": "rimraf node_modules",
-        "clean:all": "npm run clean && npm run clean:packages"
+  "name": "simple-typescript",
+  "version": "1.0.0",
+  "description": "Simple TypeScript starter project.",
+  "author": "Thfona",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "tsc -p .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "clean": "rimraf dist",
+    "clean:packages": "rimraf node_modules",
+    "clean:all": "npm run clean && npm run clean:packages"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@eslint/json": "^0.10.0",
+    "@eslint/markdown": "^6.2.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.8",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "jest": {
+    "rootDir": "src",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
     },
-    "devDependencies": {
-        "@eslint/js": "^9.18.0",
-        "@eslint/json": "^0.10.0",
-        "@eslint/markdown": "^6.2.1",
-        "@types/jest": "^29.5.14",
-        "@types/node": "^22.10.8",
-        "@typescript-eslint/eslint-plugin": "^8.21.0",
-        "@typescript-eslint/parser": "^8.21.0",
-        "eslint": "^9.18.0",
-        "globals": "^15.14.0",
-        "jest": "^29.7.0",
-        "nodemon": "^3.1.9",
-        "ts-jest": "^29.2.5",
-        "ts-node": "^10.9.2",
-        "typescript": "^5.7.3"
-    },
-    "jest": {
-        "rootDir": "src",
-        "transform": {
-            "^.+\\.(t|j)s$": "ts-jest"
-        },
-        "coverageDirectory": "../coverage",
-        "testEnvironment": "node"
-    }
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
 }
