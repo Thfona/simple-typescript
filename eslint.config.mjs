@@ -24,13 +24,21 @@ const codeFiles = [
   ...tsFiles,
 ];
 
+const languageGlobals = {
+  ...globals.node,
+  ...globals.jest,
+};
+
 export default [
   {
     name: 'Ignores',
-    ignores: ['dist', 'node_modules', '**/package-lock.json'],
+    ignores: [
+      'dist',
+      'node_modules',
+      '**/package-lock.json',
+    ],
   },
   {
-    ...js.configs.recommended,
     name: 'Code',
     files: codeFiles,
     rules: {
@@ -48,10 +56,7 @@ export default [
     name: 'JavaScript',
     files: jsFiles,
     languageOptions: {
-      globals: {
-        ...globals.node,
-        ...globals.jest,
-      },
+      globals: languageGlobals,
       ecmaVersion: 2022,
       sourceType: 'module',
     },
@@ -63,10 +68,7 @@ export default [
     },
     files: tsFiles,
     languageOptions: {
-      globals: {
-        ...globals.node,
-        ...globals.jest,
-      },
+      globals: languageGlobals,
       parser: tsParser,
       ecmaVersion: 2022,
       sourceType: 'module',
